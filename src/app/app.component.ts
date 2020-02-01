@@ -15,7 +15,7 @@ import {Item} from './interfaces/item';
 export class AppComponent {
   player: YT.Player;
   playerVars = {
-    controls: 0
+    controls: 1
   };
   title = 'rooms';
   messages = {};
