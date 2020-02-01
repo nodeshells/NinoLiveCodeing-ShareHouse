@@ -33,6 +33,7 @@
     left: 50%;
     width: 50px;
     transform: translateX(-50);
+    z-index: 20;
   }
 
   &__floor {
@@ -43,6 +44,21 @@
     width: 100%;
     background: #6a4564;
   }
+
+  &__display {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+    width: 300px;
+    height: 200px;
+    background: #000;
+    overflow: hidden;
+    padding: 16px;
+
+    youtube-player {
+      pointer-events: none;
+    }
+  }
 }
 
 .user {
@@ -50,5 +66,35 @@
   bottom: 40px;
   left: 0;
   width: 50px;
+}
+
+.side {
+  width: 400px;
+}
+
+.item-grid {
+  margin: 16px;
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  width: 100px;
+
+  &--sm {
+    width: 80px;
+  }
+
+  &--md {
+    width: 150px;
+  }
+
+  &--lg {
+    width: 300px;
+  }
 }
 

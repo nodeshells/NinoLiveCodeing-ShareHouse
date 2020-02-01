@@ -9,10 +9,19 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
 import {AngularFireAuthModule} from '@angular/fire/auth';
 import {AngularFireStorageModule} from '@angular/fire/storage';
 import {MatToolbarModule} from '@angular/material/toolbar';
-import {MatButtonModule, MatFormFieldModule, MatInputModule, MatIconModule} from '@angular/material';
+import {
+  MatButtonModule,
+  MatFormFieldModule,
+  MatInputModule,
+  MatIconModule,
+  MatSidenavModule,
+  MatCardModule,
+  MatMenuModule
+} from '@angular/material';
 import {DragDropModule} from '@angular/cdk/drag-drop';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {AngularFireAnalyticsModule} from '@angular/fire/analytics';
+import {NgxYoutubePlayerModule} from 'ngx-youtube-player';
 
 
 @NgModule({
@@ -26,6 +35,7 @@ import {AngularFireAnalyticsModule} from '@angular/fire/analytics';
     AngularFirestoreModule,
     AngularFireAuthModule,
     AngularFireStorageModule,
+    // AngularFireAnalyticsModule,
     MatToolbarModule,
     MatButtonModule,
     MatFormFieldModule,
@@ -35,7 +45,10 @@ import {AngularFireAnalyticsModule} from '@angular/fire/analytics';
     ReactiveFormsModule,
     FormsModule,
     ReactiveFormsModule,
-    AngularFireAnalyticsModule
+    NgxYoutubePlayerModule.forRoot(),
+    MatSidenavModule,
+    MatCardModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]
